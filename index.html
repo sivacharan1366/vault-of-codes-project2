@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Card</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="recipe-card">
+
+        <h1>🍫 Chocolate Cake</h1>
+
+        <img src="cake.jpg" alt="Chocolate Cake">
+
+        <div class="info">
+            <p><strong>Preparation Time:</strong> 45 Minutes</p>
+            <p><strong>Servings:</strong> 4 People</p>
+        </div>
+
+        <div id="timer">45:00</div>
+
+        <div class="button-group">
+            <button id="toggleIngredients">Show Ingredients</button>
+            <button id="toggleSteps">Show Steps</button>
+            <button id="startCooking">Start Cooking</button>
+            <button id="nextStep">Next Step</button>
+            <button id="printRecipe">Print Recipe</button>
+        </div>
+
+        <h2>Ingredients</h2>
+
+        <ul id="ingredients" class="hidden">
+            <li>2 cups flour</li>
+            <li>1 cup sugar</li>
+            <li>½ cup cocoa powder</li>
+            <li>2 eggs</li>
+            <li>1 cup milk</li>
+            <li>1 tsp vanilla extract</li>
+            <li>1 tsp baking powder</li>
+        </ul>
+
+        <h2>Instructions</h2>
+
+        <ol id="steps" class="hidden">
+            <li>Mix flour, cocoa powder and baking powder.</li>
+            <li>Add sugar and mix well.</li>
+            <li>Add eggs, milk and vanilla extract.</li>
+            <li>Stir until smooth batter forms.</li>
+            <li>Pour batter into baking pan.</li>
+            <li>Bake at 180°C for 30 minutes.</li>
+            <li>Let it cool and serve.</li>
+        </ol>
+
+        <div class="progress-container">
+            <div id="progressBar"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

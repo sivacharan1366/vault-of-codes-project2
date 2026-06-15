@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#f8d7a4,#f5f5f5);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.recipe-card{
+    background:white;
+    width:800px;
+    max-width:100%;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.info{
+    margin-bottom:20px;
+}
+
+.info p{
+    margin:8px 0;
+}
+
+#timer{
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:20px;
+    color:#d2691e;
+}
+
+.button-group{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    background:#d2691e;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#a64b00;
+    transform:scale(1.05);
+}
+
+h2{
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+li{
+    margin:10px 0;
+    transition:0.3s;
+}
+
+li:hover{
+    color:#d2691e;
+    transform:translateX(5px);
+}
+
+.hidden{
+    display:none;
+}
+
+.active-step{
+    background:#ffe082;
+    border-left:5px solid orange;
+    padding:10px;
+    border-radius:5px;
+}
+
+.progress-container{
+    width:100%;
+    height:25px;
+    background:#ddd;
+    border-radius:20px;
+    overflow:hidden;
+    margin-top:20px;
+}
+
+#progressBar{
+    width:0%;
+    height:100%;
+    background:green;
+    transition:width 0.5s ease;
+}
+
+@media(max-width:768px){
+
+    .recipe-card{
+        width:100%;
+    }
+
+    .button-group{
+        flex-direction:column;
+    }
+
+    button{
+        width:100%;
+    }
+}
+
+@media print{
+
+    button{
+        display:none;
+    }
+
+    #timer{
+        display:none;
+    }
+}
